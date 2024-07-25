@@ -4,16 +4,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AIFacePro - Revolutionary AI-Powered Professional Headshots | Transform Your Image Across Apple Devices</title>
+    <title>AIFacePro - Revolutionary AI-Powered Professional Headshots | Transform Your Image Across Apple
+Devices</title>
     <meta name="description"
-        content="Experience the future of professional imagery with AIFacePro. Our cutting-edge AI technology transforms ordinary selfies into stunning, studio-quality headshots on iPhone, iPad, Mac, and Vision Pro. Perfect for enhancing your LinkedIn profile, digital resume, and professional online presence across all your Apple devices.">
+        content="Experience the future of professional imagery with AIFacePro. Our cutting-edge AI technology
+transforms ordinary selfies into stunning, studio-quality headshots on iPhone, iPad, Mac, and Vision Pro. Perfect for
+enhancing your LinkedIn profile, digital resume, and professional online presence across all your Apple devices.">
     <meta name="keywords"
         content="AI headshots, professional headshots, AI technology, studio-quality photos, AIFacePro">
     <link rel="canonical" href="https://www.aifacepro.com/">
     <meta name="robots" content="index, follow">
     <meta property="og:title" content="AIFacePro - Transform Your Image with AI-Powered Headshots on Apple Devices">
     <meta property="og:description"
-        content="Elevate your professional image with AIFacePro's revolutionary AI technology. Create stunning headshots from selfies, customize your look, and stand out on LinkedIn and beyond. Now available on iPhone, iPad, Mac, and Vision Pro.">
+        content="Elevate your professional image with AIFacePro's revolutionary AI technology. Create stunning
+headshots from selfies, customize your look, and stand out on LinkedIn and beyond. Now available on iPhone, iPad, Mac,
+and Vision Pro.">
     <meta property="og:image" content="https://www.aifacepro.com/images/AIFaceProLogo.png">
     <meta property="og:url" content="https://www.aifacepro.com">
     <meta name="twitter:card" content="summary_large_image">
@@ -25,260 +30,230 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <meta name="apple-itunes-app" content="app-id=6499257360">
     <style>
-        :root {
-            --primary-color: #0071e3;
-            --text-color: #1d1d1f;
-            --secondary-text-color: #86868b;
-            --background-color: #ffffff;
-            --secondary-background-color: #f5f5f7;
-        }
+:root {
+    --primary-color: #0071e3;
+    --text-color: #1d1d1f;
+    --secondary-text-color: #86868b;
+    --background-color: #ffffff;
+    --secondary-background-color: #f5f5f7;
+    --overlay-background: rgba(0, 0, 0, 0.92);
+    --transition-speed: 0.3s;
+}
 
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
-            color: var(--text-color);
-            line-height: 1.47059;
-            letter-spacing: -0.022em;
-            background-color: var(--background-color);
-            -webkit-font-smoothing: antialiased;
-        }
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+    color: var(--text-color);
+    line-height: 1.47059;
+    letter-spacing: -0.022em;
+    background-color: var(--background-color);
+    -webkit-font-smoothing: antialiased;
+}
 
-        .container {
-            max-width: 980px;
-            margin: 0 auto;
-            padding: 0 22px;
-        }
+.container {
+    max-width: 980px;
+    margin: 0 auto;
+    padding: 0 22px;
+}
 
-        header {
-            background-color: rgba(255, 255, 255, 0.8);
-            backdrop-filter: saturate(180%) blur(20px);
-            position: sticky;
-            top: 0;
-            z-index: 9999;
-            transition: background-color 0.3s ease;
-        }
+header {
+    background-color: rgba(255, 255, 255, 0.8);
+    backdrop-filter: saturate(180%) blur(20px);
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+    transition: background-color 0.3s ease;
+}
 
-        nav {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            height: 44px;
-        }
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 44px;
+}
 
-        nav ul {
-            list-style-type: none;
-            padding: 0;
-            display: flex;
-        }
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+}
 
-        nav ul li {
-            margin-left: 30px;
-        }
+nav ul li {
+    margin-left: 30px;
+}
 
-        nav ul li a {
-            color: var(--text-color);
-            text-decoration: none;
-            font-size: 14px;
-            opacity: 0.8;
-            transition: opacity 0.3s;
-        }
+nav ul li a {
+    color: var(--text-color);
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: -0.01em;
+    opacity: 0.8;
+    transition: opacity 0.3s;
+}
 
-        nav ul li a:hover {
-            opacity: 1;
-        }
+nav ul li a:hover {
+    opacity: 1;
+}
 
-        h1,
-        h2,
-        h3 {
-            font-weight: 600;
-        }
+h1, h2, h3 {
+    font-weight: 600;
+}
 
-        .hero {
-            background-color: var(--secondary-background-color);
-            padding: 130px 0 65px;
-            text-align: center;
-        }
+.hero {
+    background-color: var(--secondary-background-color);
+    padding: 130px 0 65px;
+    text-align: center;
+}
 
-        .hero h1 {
-            font-size: 56px;
-            line-height: 1.07143;
-            letter-spacing: -0.005em;
-            margin-bottom: 6px;
-        }
+.hero h1 {
+    font-size: 56px;
+    line-height: 1.07143;
+    letter-spacing: -0.005em;
+    margin-bottom: 6px;
+}
 
-        .hero p {
-            font-size: 28px;
-            line-height: 1.10722;
-            letter-spacing: .004em;
-            color: var(--secondary-text-color);
-        }
+.hero p {
+    font-size: 28px;
+    line-height: 1.10722;
+    letter-spacing: .004em;
+    color: var(--secondary-text-color);
+}
 
-        .content {
-            padding: 100px 0;
-        }
+.content {
+    padding: 100px 0;
+}
 
-        .feature {
-            margin-bottom: 100px;
-            text-align: center;
-        }
+.feature {
+    margin-bottom: 100px;
+    text-align: center;
+}
 
-        .feature h2 {
-            font-size: 40px;
-            line-height: 1.1;
-            letter-spacing: 0em;
-            margin-bottom: 20px;
-        }
+.feature h2 {
+    font-size: 40px;
+    line-height: 1.1;
+    letter-spacing: 0em;
+    margin-bottom: 20px;
+}
 
-        .feature p {
-            font-size: 21px;
-            line-height: 1.381;
-            letter-spacing: .011em;
-            max-width: 600px;
-            margin: 0 auto;
-        }
+.feature p {
+    font-size: 21px;
+    line-height: 1.381;
+    letter-spacing: .011em;
+    max-width: 600px;
+    margin: 0 auto;
+}
 
-        .cta {
-            background-color: var(--secondary-background-color);
-            padding: 100px 0;
-            text-align: center;
-        }
+.cta {
+    background-color: var(--secondary-background-color);
+    padding: 100px 0;
+    text-align: center;
+}
 
-        .button {
-            display: inline-block;
-            background-color: var(--primary-color);
-            color: var(--background-color);
-            padding: 12px 24px;
-            text-decoration: none;
-            border-radius: 980px;
-            font-size: 17px;
-            line-height: 1.17648;
-            letter-spacing: -0.022em;
-            min-width: 28px;
-            transition: all 0.3s;
-        }
+.button {
+    display: inline-block;
+    background-color: var(--primary-color);
+    color: var(--background-color);
+    padding: 12px 24px;
+    text-decoration: none;
+    border-radius: 980px;
+    font-size: 17px;
+    line-height: 1.17648;
+    letter-spacing: -0.022em;
+    min-width: 28px;
+    transition: all 0.3s;
+}
 
-        .button:hover {
-            background-color: #0077ed;
-        }
+.button:hover {
+    background-color: #0077ed;
+}
 
-        footer {
-            background-color: #f5f5f7;
-            padding: 40px 0;
-            font-size: 12px;
-            line-height: 1.33337;
-            color: var(--secondary-text-color);
-        }
+footer {
+    background-color: #f5f5f7;
+    padding: 40px 0;
+    font-size: 12px;
+    line-height: 1.33337;
+    color: var(--secondary-text-color);
+}
 
-        .footer-links {
-            display: flex;
-            justify-content: center;
-            margin-bottom: 20px;
-        }
+.footer-links {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
 
-        .footer-links a {
-            margin: 0 10px;
-            color: var(--secondary-text-color);
-            text-decoration: none;
-        }
+.footer-links a {
+    margin: 0 10px;
+    color: var(--secondary-text-color);
+    text-decoration: none;
+}
 
-        .footer-links a:hover {
-            text-decoration: underline;
-        }
+.footer-links a:hover {
+    text-decoration: underline;
+}
 
-        .social-links {
-            display: flex;
-            justify-content: center;
-            margin-bottom: 20px;
-        }
+.social-links {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
 
-        .social-links a {
-            margin: 0 10px;
-        }
+.social-links a {
+    margin: 0 10px;
+}
 
-        .social-links img {
-            width: 24px;
-            height: 24px;
-        }
+.social-links img {
+    width: 24px;
+    height: 24px;
+}
 
-        .app-store-badge {
-            display: flex;
-            justify-content: center;
-            margin-bottom: 20px;
-        }
+.app-store-badge {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
 
-        .video-demo {
-            text-align: center;
-            margin: 80px 0;
-            padding: 40px;
-            background-color: var(--secondary-background-color);
-            border-radius: 20px;
-        }
+.video-demo {
+    text-align: center;
+    margin: 80px 0;
+    padding: 40px;
+    background-color: var(--secondary-background-color);
+    border-radius: 20px;
+}
 
-        .video-demo h2 {
-            font-size: 40px;
-            margin-bottom: 30px;
-        }
+.video-demo h2 {
+    font-size: 40px;
+    margin-bottom: 30px;
+}
 
-        .video-container {
-            position: relative;
-            padding-bottom: 56.25%;
-            /* 16:9 aspect ratio */
-            height: 0;
-            overflow: hidden;
-            max-width: 100%;
-        }
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+}
 
-        .video-container iframe {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            border-radius: 10px;
-        }
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
 
-        .fade-in {
-            opacity: 0;
-            transform: translateY(20px);
-            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
-        }
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
 
-        .fade-in.is-visible {
-            opacity: 1;
-            transform: translateY(0);
-        }
+.fade-in.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
 
-        @media (prefers-color-scheme: dark) {
-            :root {
-                --text-color: #f5f5f7;
-                --secondary-text-color: #a1a1a6;
-                --background-color: #000000;
-                --secondary-background-color: #1d1d1f;
-            }
-
-            header {
-                background-color: rgba(29, 29, 31, 0.8);
-            }
-        }
-
-        @media (max-width: 768px) {
-            .hero h1 {
-                font-size: 40px;
-            }
-
-            .hero p {
-                font-size: 21px;
-            }
-
-            .feature h2 {
-                font-size: 32px;
-            }
-
-            .feature p {
-                font-size: 17px;
-            }
-        }
-
-        .demo-photos {
+.demo-photos {
     text-align: center;
     margin-top: 60px;
     padding: 0 20px;
@@ -288,76 +263,307 @@
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     gap: 20px;
-    padding: 20px;
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.gallery-image-container {
+    aspect-ratio: 1 / 1;
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery-image-container:hover {
+    transform: scale(1.03);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
 
 .gallery-image {
     width: 100%;
-    height: 200px;
+    height: 100%;
     object-fit: cover;
-    border-radius: 10px;
-    transition: transform 0.3s ease;
-    cursor: pointer;
+    transition: opacity 0.5s ease;
+    opacity: 0;
 }
 
-.gallery-image:hover {
-    transform: scale(1.05);
+.gallery-image.loaded {
+    opacity: 1;
 }
 
 .fullscreen-overlay {
-    display: none;
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.9);
-    z-index: 1000;
+    z-index: 9999;
+    display: none;
     justify-content: center;
     align-items: center;
 }
 
-.fullscreen-overlay img {
-    max-width: 90%;
-    max-height: 90%;
-    object-fit: contain;
+
+    .fullscreen-header {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        padding: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        z-index: 10000;
+    }
+
+.fullscreen-overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.fullscreen-overlay.zoomed {
+    cursor: zoom-out;
+}
+
+.fullscreen-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.fullscreen-header {
+    top: 0;
+}
+
+.fullscreen-footer {
+    bottom: 0;
+}
+
+.fullscreen-overlay:not(:hover) .fullscreen-header,
+.fullscreen-overlay:not(:hover) .fullscreen-footer {
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+.close-button,
+.fullscreen-action-button {
+    background: rgba(0, 0, 0, 0.5);
+    border: none;
+    color: white;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color var(--transition-speed) ease;
+    font-size: 24px;
 }
 
 .close-button {
     position: absolute;
     top: 20px;
-    right: 30px;
-    font-size: 30px;
-    color: white;
-    cursor: pointer;
-}
-
-.navigation {
-    position: absolute;
-    bottom: 20px;
-    left: 0;
-    right: 0;
-    text-align: center;
-}
-
-.navigation button {
-    background: none;
+    right: 20px;
+    background: rgba(255, 255, 255, 0.3);
     border: none;
     color: white;
     font-size: 24px;
-    margin: 0 10px;
     cursor: pointer;
+    padding: 10px;
+    border-radius: 50%;
+    width: 44px;
+    height: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s ease;
+    z-index: 10001;
+}
+
+.close-button svg {
+    width: 24px;
+    height: 24px;
+}
+
+.fullscreen-action-button:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.close-button:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.image-counter {
+    color: white;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.fullscreen-content {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fullscreen-image-container {
+    max-width: 90%;
+    max-height: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fullscreen-image-container.zoomed {
+    transform: scale(2);
+    cursor: grab;
+}
+
+.fullscreen-image-container.zoomed:active {
+    cursor: grabbing;
+}
+
+#fullscreenImage {
+    max-width: 100%;
+    max-height: 90vh;
+    object-fit: contain;
+}
+
+.nav-button {
+    background: rgba(255, 255, 255, 0.1);
+    border: none;
+    color: white;
+    cursor: pointer;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s ease, opacity 0.3s ease;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    opacity: 0;
+}
+
+.fullscreen-overlay:hover .nav-button {
+    opacity: 1;
+}
+
+.nav-button:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+#prevButton {
+    left: 20px;
+}
+
+#nextButton {
+    right: 20px;
+}
+
+.nav-button svg {
+    width: 30px;
+    height: 30px;
+    fill: currentColor;
+}
+
+.zoom-controls {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10px;
+}
+
+.zoom-button {
+    background: rgba(0, 0, 0, 0.5);
+    border: none;
+    color: white;
+    font-size: 18px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.zoom-button:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideIn {
+    from { transform: translateY(20px); }
+    to { transform: translateY(0); }
+}
+
+.fullscreen-overlay.active .fullscreen-header,
+.fullscreen-overlay.active .fullscreen-footer {
+    animation: fadeIn var(--transition-speed) ease, slideIn var(--transition-speed) ease;
+}
+
+.fullscreen-overlay.active #fullscreenImage {
+    animation: fadeIn var(--transition-speed) ease;
 }
 
 @media (max-width: 768px) {
-    .image-gallery {
-        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    .fullscreen-header,
+    .fullscreen-footer {
+        padding: 15px;
     }
-    .gallery-image {
-        height: 150px;
+
+    .close-button,
+    .fullscreen-action-button {
+        width: 36px;
+        height: 36px;
+    }
+
+    .image-counter {
+        font-size: 12px;
+    }
+
+    .nav-button {
+        width: 40px;
+        height: 40px;
+    }
+
+    #prevButton {
+        left: 10px;
+    }
+
+    #nextButton {
+        right: 10px;
+    }
+
+    .zoom-controls {
+        bottom: 10px;
+    }
+
+    .zoom-button {
+        width: 36px;
+        height: 36px;
+        font-size: 16px;
     }
 }
-
     </style>
     
 <style>
@@ -367,6 +573,7 @@
         gap: 40px;
         margin-bottom: 60px;
     }
+
     .feature {
         background-color: var(--secondary-background-color);
         border-radius: 18px;
@@ -374,24 +581,29 @@
         text-align: left;
         transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
+
     .feature:hover {
         transform: translateY(-5px);
-        box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
     }
+
     .feature-icon {
         width: 60px;
         height: 60px;
         margin-bottom: 20px;
     }
+
     .feature h2 {
         font-size: 24px;
         margin-bottom: 15px;
     }
+
     .feature p {
         font-size: 16px;
         line-height: 1.5;
         color: var(--secondary-text-color);
     }
+
     .learn-more {
         display: inline-block;
         margin-top: 15px;
@@ -399,33 +611,41 @@
         text-decoration: none;
         font-weight: 600;
     }
+
     .learn-more .arrow {
         transition: transform 0.3s ease;
     }
+
     .learn-more:hover .arrow {
         transform: translateX(5px);
     }
+
     .wide {
         grid-column: 1 / -1;
     }
+
     .benefits-grid {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
         gap: 30px;
         margin-top: 30px;
     }
+
     .benefit {
         text-align: center;
     }
+
     .benefit-icon {
         width: 50px;
         height: 50px;
         margin-bottom: 15px;
     }
+
     .benefit h3 {
         font-size: 18px;
         margin-bottom: 10px;
     }
+
     .compatibility {
         background-color: var(--secondary-background-color);
         border-radius: 18px;
@@ -433,6 +653,7 @@
         text-align: center;
         margin-top: 60px;
     }
+
     .device-list {
         display: flex;
         justify-content: center;
@@ -440,6 +661,7 @@
         padding: 0;
         margin: 30px 0;
     }
+
     .device-list li {
         margin: 0 20px;
         display: flex;
@@ -447,19 +669,22 @@
         align-items: center;
         transition: transform 0.3s ease;
     }
+
     .device-list li:hover {
         transform: scale(1.1);
     }
+
     .device-icon {
         width: 60px;
         height: 60px;
         margin-bottom: 10px;
     }
-    
+
     .cta-section {
         text-align: center;
         margin-top: 80px;
     }
+
     .cta-button {
         display: inline-block;
         background-color: var(--primary-color);
@@ -472,19 +697,24 @@
         margin-top: 20px;
         transition: background-color 0.3s ease;
     }
+
     .cta-button:hover {
         background-color: #005cbf;
     }
+
     @media (max-width: 768px) {
         .feature-grid {
             grid-template-columns: 1fr;
         }
+
         .benefits-grid {
             grid-template-columns: 1fr 1fr;
         }
+
         .device-list {
             flex-wrap: wrap;
         }
+
         .device-list li {
             margin: 10px 20px;
         }
@@ -497,7 +727,9 @@
     <header>
         <div class="container">
             <nav>
-                <div class="logo">AIFacePro</div>
+                <div class="logo">
+                    <img src="./images/AIFaceProLogo.png" alt="AIFacePro Logo" width="40" height="40">
+                </div>
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About</a></li>
@@ -525,36 +757,34 @@
             <div class="container">
                 
 
-<div class="demo-photos">
-    <div id="imageGallery" class="image-gallery">
-    </div>
-</div>
-<div id="fullscreenOverlay" class="fullscreen-overlay">
-    <span class="close-button">&times;</span>
-    <img id="fullscreenImage" src="" alt="Fullscreen image">
-    <div class="navigation">
-      <button id="prevButton">&lt;</button>
-      <button id="nextButton">&gt;</button>
-    </div>
-  </div>
+
 <div class="feature-grid">
     <div class="feature fade-in">
         <img src="/images/ai-perfection-icon.svg" alt="AI-Powered Perfection" class="feature-icon">
         <h2>AI-Powered Perfection</h2>
-        <p>Experience the magic of our state-of-the-art AI as it transforms ordinary selfies into stunning, studio-quality headshots. Unveil your best professional self with ultra-realistic, AI-perfected smiles that capture your unique essence. Our advanced neural networks analyze facial features, lighting, and composition to create headshots that rival professional photography.</p>
+        <p>Experience the magic of our state-of-the-art AI as it transforms ordinary selfies into stunning,
+            studio-quality headshots. Unveil your best professional self with ultra-realistic, AI-perfected smiles that
+            capture your unique essence. Our advanced neural networks analyze facial features, lighting, and composition
+            to create headshots that rival professional photography.</p>
     </div>
 
     <div class="feature fade-in">
         <img src="/images/custom-prompt-icon.svg" alt="AI Custom Prompt Feature" class="feature-icon">
         <h2>NEW: AI Custom Prompt Feature</h2>
-        <p>Take control of your image with our groundbreaking AI Custom Prompt Feature. Specify your desired context, activity, background, and location for truly personalized AI-generated headshots. Whether you need a corporate office backdrop or a creative outdoor setting, our AI can make it happen. The only limit is your imagination.</p>
+        <p>Take control of your image with our groundbreaking AI Custom Prompt Feature. Specify your desired context,
+            activity, background, and location for truly personalized AI-generated headshots. Whether you need a
+            corporate office backdrop or a creative outdoor setting, our AI can make it happen. The only limit is your
+            imagination.</p>
         <a href="#" class="learn-more">Learn how to create custom prompts <span class="arrow">→</span></a>
     </div>
 
     <div class="feature fade-in">
         <img src="/images/fast-processing-icon.svg" alt="Lightning-Fast AI Processing" class="feature-icon">
         <h2>Lightning-Fast AI Processing</h2>
-        <p>Time is of the essence. That's why we've harnessed the power of cloud GPU acceleration to deliver your professional AI-generated headshots at unprecedented speeds. Our distributed computing network processes your images using the latest NVIDIA GPUs, ensuring most orders are completed within 12 hours. You'll always be ready for your next opportunity, no matter which Apple device you're using.</p>
+        <p>Time is of the essence. That's why we've harnessed the power of cloud GPU acceleration to deliver your
+            professional AI-generated headshots at unprecedented speeds. Our distributed computing network processes
+            your images using the latest NVIDIA GPUs, ensuring most orders are completed within 12 hours. You'll always
+            be ready for your next opportunity, no matter which Apple device you're using.</p>
     </div>
 </div>
 
@@ -564,43 +794,86 @@
         <div class="benefit">
             <img src="/images/time-money-icon.svg" alt="Save time and money" class="benefit-icon">
             <h3>Save Time and Money</h3>
-            <p>Skip expensive photo shoots. Generate professional headshots instantly with our AI technology, right from your iPhone, iPad, Mac, or Vision Pro. No need for costly equipment or studio rentals.</p>
+            <p>Skip expensive photo shoots. Generate professional headshots instantly with our AI technology, right from
+                your iPhone, iPad, Mac, or Vision Pro. No need for costly equipment or studio rentals.</p>
         </div>
         <div class="benefit">
             <img src="/images/boost-image-icon.svg" alt="Boost your professional image" class="benefit-icon">
             <h3>Boost Your Image</h3>
-            <p>Stand out on LinkedIn and other professional platforms with stunning AI-enhanced portraits. Our AI ensures you always look your best, helping you make a strong first impression in the digital world.</p>
+            <p>Stand out on LinkedIn and other professional platforms with stunning AI-enhanced portraits. Our AI
+                ensures you always look your best, helping you make a strong first impression in the digital world.</p>
         </div>
         <div class="benefit">
             <img src="/images/cutting-edge-icon.svg" alt="Stay ahead with cutting-edge technology" class="benefit-icon">
             <h3>Stay Ahead</h3>
-            <p>Leverage the latest advancements in AI portrait technology to keep your profile fresh and impactful. Our continuous AI model updates ensure you're always using the most advanced image generation technology available.</p>
+            <p>Leverage the latest advancements in AI portrait technology to keep your profile fresh and impactful. Our
+                continuous AI model updates ensure you're always using the most advanced image generation technology
+                available.</p>
         </div>
         <div class="benefit">
             <img src="/images/seamless-sharing-icon.svg" alt="Seamless sharing" class="benefit-icon">
             <h3>Seamless Sharing</h3>
-            <p>Enjoy AI-optimized sharing across all major platforms, ensuring your image looks great everywhere. Our intelligent cropping and formatting ensure your headshot is perfectly optimized for each social media platform and professional network.</p>
+            <p>Enjoy AI-optimized sharing across all major platforms, ensuring your image looks great everywhere. Our
+                intelligent cropping and formatting ensure your headshot is perfectly optimized for each social media
+                platform and professional network.</p>
         </div>
     </div>
 </div>
 
+<div class="demo-photos">
+    <div id="imageGallery" class="image-gallery">
+        <!-- Images will be dynamically added here -->
+    </div>
+</div>
+
+<div id="fullscreenOverlay" class="fullscreen-overlay">
+    <button class="close-button" aria-label="Close fullscreen image">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+    </button>
+    <div class="fullscreen-content">
+        <button id="prevButton" class="nav-button">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="15 18 9 12 15 6"></polyline>
+            </svg>
+        </button>
+        <div class="fullscreen-image-container">
+            <img id="fullscreenImage" src="" alt="Fullscreen image">
+        </div>
+        <button id="nextButton" class="nav-button">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="9 18 15 12 9 6"></polyline>
+            </svg>
+        </button>
+    </div>
+    <div class="fullscreen-footer">
+        <div class="image-counter"></div>
+    </div>
+</div>
 
 <div class="feature compatibility fade-in">
     <h2>Seamless Apple Ecosystem Integration</h2>
     <p>AIFacePro is meticulously designed to work flawlessly across your entire Apple ecosystem:</p>
     <ul class="device-list">
-        <li><img src="/images/iphone-icon.svg" alt="iPhone" class="device-icon"> iPhone</li>
-        <li><img src="/images/ipad-icon.svg" alt="iPad" class="device-icon"> iPad</li>
-        <li><img src="/images/mac-icon.svg" alt="Mac" class="device-icon"> Mac</li>
-        <li><img src="/images/vision-pro-icon.svg" alt="Vision Pro" class="device-icon"> Vision Pro</li>
+        <li>iPhone</li>
+        <li>iPad</li>
+        <li>Mac</li>
+        <li>Vision Pro</li>
     </ul>
-    <p>Available on iOS 15.0 or later, macOS Monterey or later, and visionOS. Transform your professional image seamlessly across all your Apple devices in 175 countries and regions worldwide. With iCloud integration, your AI-generated headshots are always at your fingertips, no matter which device you're using.</p>
+    <p>Available on iOS 15.0 or later, macOS Monterey or later, and visionOS. Transform your professional image
+        seamlessly across all your Apple devices in 175 countries and regions worldwide. With iCloud integration, your
+        AI-generated headshots are always at your fingertips, no matter which device you're using.</p>
 </div>
 
 <div class="cta-section fade-in">
     <h2>Ready to Transform Your Professional Image Across All Your Apple Devices?</h2>
-    <p>Join thousands of professionals who are already leveraging the power of AI to enhance their digital presence. Whether you're using an iPhone, iPad, Mac, or Vision Pro, AIFacePro is ready to elevate your professional image.</p>
-    <a href="https://apps.apple.com/us/app/aifacepro-ai-headshot-for-pro/id6499257360" class="cta-button">Download AIFacePro Now</a>
+    <p>Join thousands of professionals who are already leveraging the power of AI to enhance their digital presence.
+        Whether you're using an iPhone, iPad, Mac, or Vision Pro, AIFacePro is ready to elevate your professional image.
+    </p>
+    <a href="https://apps.apple.com/us/app/aifacepro-ai-headshot-for-pro/id6499257360" class="cta-button">Download
+        AIFacePro Now</a>
 </div>
 
 <script type="application/ld+json">
@@ -657,62 +930,232 @@
 
 </script>
 <script>
-    document.addEventListener('DOMContentLoaded', function() {
-        console.log('DOM content loaded');
-        const gallery = document.getElementById('imageGallery');
-        const fullscreenOverlay = document.getElementById('fullscreenOverlay');
-        const fullscreenImage = document.getElementById('fullscreenImage');
-        const closeButton = document.querySelector('.close-button');
-        const prevButton = document.getElementById('prevButton');
-        const nextButton = document.getElementById('nextButton');
-        const imageCount = 66;
-        let currentImageIndex = 0;
-    
-        function loadImages() {
-            for (let i = 1; i <= imageCount; i++) {
-                const img = document.createElement('img');
-                img.src = `./images/demoPhotos/AIFacePro${i}.png`;
-                img.alt = `AIFacePro Demo Image ${i}`;
-                img.className = 'gallery-image';
-                img.loading = 'lazy';
-                img.dataset.index = i - 1;
-    
-                img.addEventListener('click', function() {
-                    openFullscreen(this.dataset.index);
-                });
-    
-                gallery.appendChild(img);
-                console.log(`Added image ${i} to gallery`);
-            }
+document.addEventListener('DOMContentLoaded', function () {
+    const gallery = document.getElementById('imageGallery');
+    const fullscreenOverlay = document.getElementById('fullscreenOverlay');
+    const fullscreenImage = document.getElementById('fullscreenImage');
+    const closeButton = document.querySelector('.close-button');
+    const prevButton = document.getElementById('prevButton');
+    const nextButton = document.getElementById('nextButton');
+    const imageCounter = document.querySelector('.image-counter');
+    const imageCount = 66;
+    let currentImageIndex = 0;
+    let loadedImages = [];
+    let startX = 0;
+    let currentX = 0;
+    let isZoomed = false;
+    let zoomLevel = 1;
+
+    function loadImages() {
+        for (let i = 1; i <= imageCount; i++) {
+            const img = new Image();
+            img.src = `./images/demoPhotos/AIFacePro${i}.png`;
+            img.onload = () => {
+                loadedImages.push(i);
+                addImageToGallery(i);
+            };
+            img.onerror = () => {
+                console.log(`Image ${i} failed to load`);
+            };
         }
-    
-        function openFullscreen(index) {
-            currentImageIndex = parseInt(index);
-            fullscreenImage.src = `./images/demoPhotos/AIFacePro${currentImageIndex + 1}.png`;
-            fullscreenOverlay.style.display = 'flex';
+    }
+
+    function addImageToGallery(index) {
+        const container = document.createElement('div');
+        container.className = 'gallery-image-container';
+
+        const img = document.createElement('img');
+        img.src = `./images/demoPhotos/AIFacePro${index}.png`;
+        img.alt = `AIFacePro Demo Image ${index}`;
+        img.className = 'gallery-image loaded';
+        img.dataset.index = loadedImages.indexOf(index);
+
+        container.appendChild(img);
+        container.addEventListener('click', function () {
+            openFullscreen(img.dataset.index);
+        });
+
+        gallery.appendChild(container);
+    }
+
+    function openFullscreen(index) {
+    currentImageIndex = parseInt(index);
+    updateFullscreenImage();
+    fullscreenOverlay.style.display = 'flex';
+    document.body.style.overflow = 'hidden';
+    updateNavigationButtons();
+    updateImageCounter();
+}
+
+function closeFullscreen() {
+    fullscreenOverlay.style.display = 'none';
+    document.body.style.overflow = '';
+    resetZoom();
+}
+
+    function showNextImage() {
+        if (currentImageIndex < loadedImages.length - 1) {
+            currentImageIndex++;
+            updateFullscreenImage(true);
         }
-    
-        function closeFullscreen() {
-            fullscreenOverlay.style.display = 'none';
+    }
+
+    function showPrevImage() {
+        if (currentImageIndex > 0) {
+            currentImageIndex--;
+            updateFullscreenImage(false);
         }
+    }
+
+    function updateFullscreenImage(isNext = true) {
+    const imageIndex = loadedImages[currentImageIndex];
+    const newImage = new Image();
+    newImage.src = `./images/demoPhotos/AIFacePro${imageIndex}.png`;
+    newImage.onload = () => {
+        fullscreenImage.style.opacity = '0';
+        setTimeout(() => {
+            fullscreenImage.src = newImage.src;
+            fullscreenImage.style.opacity = '1';
+            resetZoom();
+        }, 300);
+    };
+    updateNavigationButtons();
+    updateImageCounter();
+}
+
+    function updateNavigationButtons() {
+        prevButton.disabled = currentImageIndex === 0;
+        nextButton.disabled = currentImageIndex === loadedImages.length - 1;
+        prevButton.style.opacity = currentImageIndex === 0 ? '0.3' : '0.7';
+        nextButton.style.opacity = currentImageIndex === loadedImages.length - 1 ? '0.3' : '0.7';
+    }
+
+    function updateImageCounter() {
+        imageCounter.textContent = `${currentImageIndex + 1} of ${loadedImages.length}`;
+    }
+
+    function resetZoom() {
+        isZoomed = false;
+        zoomLevel = 1;
+        fullscreenImage.style.transform = 'scale(1)';
+        fullscreenOverlay.classList.remove('zoomed');
+    }
+
+    function toggleZoom(event) {
+    const image = document.getElementById('fullscreenImage');
+    isZoomed = !isZoomed;
     
-        function showNextImage() {
-            currentImageIndex = (currentImageIndex + 1) % imageCount;
-            fullscreenImage.src = `./images/demoPhotos/AIFacePro${currentImageIndex + 1}.png`;
+    if (isZoomed) {
+        const rect = image.getBoundingClientRect();
+        const x = (event.clientX - rect.left) / rect.width;
+        const y = (event.clientY - rect.top) / rect.height;
+        
+        image.style.transformOrigin = `${x * 100}% ${y * 100}%`;
+        image.style.transform = 'scale(2.5)';
+        image.classList.add('zoomed');
+    } else {
+        image.style.transform = 'scale(1)';
+        image.classList.remove('zoomed');
+    }
+}
+    function handleZoomPan(event) {
+        if (isZoomed) {
+            const rect = fullscreenImage.getBoundingClientRect();
+            const x = (event.clientX - rect.left) / rect.width;
+            const y = (event.clientY - rect.top) / rect.height;
+            fullscreenImage.style.transformOrigin = `${x * 100}% ${y * 100}%`;
         }
-    
-        function showPrevImage() {
-            currentImageIndex = (currentImageIndex - 1 + imageCount) % imageCount;
-            fullscreenImage.src = `./images/demoPhotos/AIFacePro${currentImageIndex + 1}.png`;
+    }
+
+    loadImages();
+    closeButton.addEventListener('click', closeFullscreen);
+    prevButton.addEventListener('click', showPrevImage);
+    nextButton.addEventListener('click', showNextImage);
+    fullscreenImage.addEventListener('click', toggleZoom);
+    fullscreenOverlay.addEventListener('mousemove', handleZoomPan);
+    fullscreenOverlay.addEventListener('click', function(event) {
+        if (event.target === fullscreenOverlay) {
+            closeFullscreen();
         }
-    
-        loadImages();
-        closeButton.addEventListener('click', closeFullscreen);
-        prevButton.addEventListener('click', showPrevImage);
-        nextButton.addEventListener('click', showNextImage);
-    
-        console.log('Finished setting up gallery');
     });
+    
+
+    // Swipe and drag functionality
+    fullscreenImage.addEventListener('mousedown', startDrag);
+    fullscreenImage.addEventListener('touchstart', startDrag, { passive: false });
+// Prevent closing when clicking on the image itself
+fullscreenImage.addEventListener('click', (e) => {
+    e.stopPropagation();
+});
+
+    function startDrag(e) {
+        e.preventDefault();
+        startX = e.type === 'mousedown' ? e.clientX : e.touches[0].clientX;
+        currentX = 0;
+        fullscreenImage.style.transition = 'none';
+        document.addEventListener('mousemove', drag);
+        document.addEventListener('touchmove', drag, { passive: false });
+        document.addEventListener('mouseup', endDrag);
+        document.addEventListener('touchend', endDrag);
+    }
+
+    function drag(e) {
+        e.preventDefault();
+        const x = e.type === 'mousemove' ? e.clientX : e.touches[0].clientX;
+        currentX = x - startX;
+        fullscreenImage.style.transform = `translateX(${currentX}px)`;
+    }
+
+    function endDrag() {
+        fullscreenImage.style.transition = 'transform 0.3s ease';
+        if (Math.abs(currentX) > 100) {
+            if (currentX > 0 && currentImageIndex > 0) {
+                showPrevImage();
+            } else if (currentX < 0 && currentImageIndex < loadedImages.length - 1) {
+                showNextImage();
+            } else {
+                fullscreenImage.style.transform = 'translateX(0)';
+            }
+        } else {
+            fullscreenImage.style.transform = 'translateX(0)';
+        }
+        document.removeEventListener('mousemove', drag);
+        document.removeEventListener('touchmove', drag);
+        document.removeEventListener('mouseup', endDrag);
+        document.removeEventListener('touchend', endDrag);
+    }
+
+    // Keyboard navigation
+    document.addEventListener('keydown', (e) => {
+    if (fullscreenOverlay.classList.contains('active')) {
+        if (e.key === 'ArrowRight') showNextImage();
+        else if (e.key === 'ArrowLeft') showPrevImage();
+        else if (e.key === 'Escape') closeFullscreen();
+    }
+    if (e.key === 'Escape' && fullscreenOverlay.style.display === 'flex') {
+        closeFullscreen();
+    }
+});
+
+    // Touch events for mobile
+    let touchStartX = 0;
+    let touchEndX = 0;
+
+    fullscreenOverlay.addEventListener('touchstart', (e) => {
+        touchStartX = e.changedTouches[0].screenX;
+    });
+
+    fullscreenOverlay.addEventListener('touchend', (e) => {
+        touchEndX = e.changedTouches[0].screenX;
+        handleSwipe();
+    });
+
+    function handleSwipe() {
+        if (touchEndX < touchStartX) showNextImage();
+        if (touchEndX > touchStartX) showPrevImage();
+    }
+});
+
 </script>
 
             </div>

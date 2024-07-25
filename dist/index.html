@@ -21,6 +21,7 @@
     <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
     <link rel="manifest" href="./favicon/site.webmanifest">
+    <link rel="icon" type="image/x-icon" href="./favicon/favicon.ico">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <meta name="apple-itunes-app" content="app-id=6499257360">
     <style>
@@ -276,6 +277,87 @@
                 font-size: 17px;
             }
         }
+
+        .demo-photos {
+    text-align: center;
+    margin-top: 60px;
+    padding: 0 20px;
+}
+
+.image-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.gallery-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.gallery-image:hover {
+    transform: scale(1.05);
+}
+
+.fullscreen-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+}
+
+.fullscreen-overlay img {
+    max-width: 90%;
+    max-height: 90%;
+    object-fit: contain;
+}
+
+.close-button {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+}
+
+.navigation {
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+
+.navigation button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 24px;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .image-gallery {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    }
+    .gallery-image {
+        height: 150px;
+    }
+}
+
     </style>
     
 <style>
@@ -488,6 +570,21 @@
         </div>
     </div>
 </div>
+<div class="demo-photos fade-in">
+    <h2>See AIFacePro in Action</h2>
+    <p>Browse through our gallery of AI-generated professional headshots</p>
+    <div id="imageGallery" class="image-gallery">
+        <!-- Images will be dynamically inserted here -->
+    </div>
+    <div id="fullscreenOverlay" class="fullscreen-overlay">
+        <span class="close-button">&times;</span>
+        <img id="fullscreenImage" src="" alt="Fullscreen image">
+        <div class="navigation">
+            <button id="prevButton">&lt;</button>
+            <button id="nextButton">&gt;</button>
+        </div>
+    </div>
+</div>
 
 <div class="feature compatibility fade-in">
     <h2>Seamless Apple Ecosystem Integration</h2>
@@ -558,7 +655,66 @@
     }
   ]
 }
+
 </script>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        console.log('DOM content loaded');
+        const gallery = document.getElementById('imageGallery');
+        const fullscreenOverlay = document.getElementById('fullscreenOverlay');
+        const fullscreenImage = document.getElementById('fullscreenImage');
+        const closeButton = document.querySelector('.close-button');
+        const prevButton = document.getElementById('prevButton');
+        const nextButton = document.getElementById('nextButton');
+        const imageCount = 66;
+        let currentImageIndex = 0;
+    
+        function loadImages() {
+            for (let i = 1; i <= imageCount; i++) {
+                const img = document.createElement('img');
+                img.src = `./images/demoPhotos/AIFacePro${i}.png`;
+                img.alt = `AIFacePro Demo Image ${i}`;
+                img.className = 'gallery-image';
+                img.loading = 'lazy';
+                img.dataset.index = i - 1;
+    
+                img.addEventListener('click', function() {
+                    openFullscreen(this.dataset.index);
+                });
+    
+                gallery.appendChild(img);
+                console.log(`Added image ${i} to gallery`);
+            }
+        }
+    
+        function openFullscreen(index) {
+            currentImageIndex = parseInt(index);
+            fullscreenImage.src = `./images/demoPhotos/AIFacePro${currentImageIndex + 1}.png`;
+            fullscreenOverlay.style.display = 'flex';
+        }
+    
+        function closeFullscreen() {
+            fullscreenOverlay.style.display = 'none';
+        }
+    
+        function showNextImage() {
+            currentImageIndex = (currentImageIndex + 1) % imageCount;
+            fullscreenImage.src = `./images/demoPhotos/AIFacePro${currentImageIndex + 1}.png`;
+        }
+    
+        function showPrevImage() {
+            currentImageIndex = (currentImageIndex - 1 + imageCount) % imageCount;
+            fullscreenImage.src = `./images/demoPhotos/AIFacePro${currentImageIndex + 1}.png`;
+        }
+    
+        loadImages();
+        closeButton.addEventListener('click', closeFullscreen);
+        prevButton.addEventListener('click', showPrevImage);
+        nextButton.addEventListener('click', showNextImage);
+    
+        console.log('Finished setting up gallery');
+    });
+    </script>
 
             </div>
         </section>

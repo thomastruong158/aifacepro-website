@@ -23,3 +23,9 @@ Thumbs.db
 
 # Temporary files
 *.tmp
+
+# Ignore all HTML files
+*.html
+
+# But not these files...
+!dist/**/*.html

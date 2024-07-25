@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>https://victorious-sand-0a433e110.5.azurestaticapps.net/index.html</loc>
+    <lastmod>2024-07-25</lastmod>
+    <image:image>
+      <image:loc>https://victorious-sand-0a433e110.5.azurestaticapps.net/images/AIFaceProLogo.png</image:loc>
+    </image:image>
+    {% for i in range(1, 67) %}
+    <image:image>
+      <image:loc>https://victorious-sand-0a433e110.5.azurestaticapps.net/images/demoPhotos/AIFacePro{{ i }}.png</image:loc>
+    </image:image>
+    {% endfor %}
+  </url>
+  <url>
+    <loc>https://victorious-sand-0a433e110.5.azurestaticapps.net/about.html</loc>
+    <lastmod>2024-07-25</lastmod>
+  </url>
+  <url>
+    <loc>https://victorious-sand-0a433e110.5.azurestaticapps.net/privacy-policy.html</loc>
+    <lastmod>2024-07-25</lastmod>
+  </url>
+  <url>
+    <loc>https://victorious-sand-0a433e110.5.azurestaticapps.net/terms-of-use.html</loc>
+    <lastmod>2024-07-25</lastmod>
+  </url>
+</urlset>

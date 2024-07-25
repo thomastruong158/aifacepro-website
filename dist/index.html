@@ -329,11 +329,15 @@ footer {
 }
 
 .fullscreen-footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
     padding: 20px;
     background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
     transition: opacity 0.3s ease, transform 0.3s ease;
 }
 
@@ -404,6 +408,7 @@ footer {
     color: white;
     font-size: 14px;
     font-weight: 500;
+    text-align: center;
 }
 
 .fullscreen-content {
@@ -760,7 +765,7 @@ footer {
 
 <div class="feature-grid">
     <div class="feature fade-in">
-        <img src="/images/ai-perfection-icon.svg" alt="AI-Powered Perfection" class="feature-icon">
+        <!-- <img src="/images/ai-perfection-icon.svg" alt="AI-Powered Perfection" class="feature-icon"> -->
         <h2>AI-Powered Perfection</h2>
         <p>Experience the magic of our state-of-the-art AI as it transforms ordinary selfies into stunning,
             studio-quality headshots. Unveil your best professional self with ultra-realistic, AI-perfected smiles that
@@ -769,7 +774,7 @@ footer {
     </div>
 
     <div class="feature fade-in">
-        <img src="/images/custom-prompt-icon.svg" alt="AI Custom Prompt Feature" class="feature-icon">
+        <!-- <img src="/images/custom-prompt-icon.svg" alt="AI Custom Prompt Feature" class="feature-icon"> -->
         <h2>NEW: AI Custom Prompt Feature</h2>
         <p>Take control of your image with our groundbreaking AI Custom Prompt Feature. Specify your desired context,
             activity, background, and location for truly personalized AI-generated headshots. Whether you need a
@@ -779,7 +784,7 @@ footer {
     </div>
 
     <div class="feature fade-in">
-        <img src="/images/fast-processing-icon.svg" alt="Lightning-Fast AI Processing" class="feature-icon">
+        <!-- <img src="/images/fast-processing-icon.svg" alt="Lightning-Fast AI Processing" class="feature-icon"> -->
         <h2>Lightning-Fast AI Processing</h2>
         <p>Time is of the essence. That's why we've harnessed the power of cloud GPU acceleration to deliver your
             professional AI-generated headshots at unprecedented speeds. Our distributed computing network processes
@@ -792,26 +797,26 @@ footer {
     <h2>Why Choose AIFacePro?</h2>
     <div class="benefits-grid">
         <div class="benefit">
-            <img src="/images/time-money-icon.svg" alt="Save time and money" class="benefit-icon">
+            <!-- <img src="/images/time-money-icon.svg" alt="Save time and money" class="benefit-icon"> -->
             <h3>Save Time and Money</h3>
             <p>Skip expensive photo shoots. Generate professional headshots instantly with our AI technology, right from
                 your iPhone, iPad, Mac, or Vision Pro. No need for costly equipment or studio rentals.</p>
         </div>
         <div class="benefit">
-            <img src="/images/boost-image-icon.svg" alt="Boost your professional image" class="benefit-icon">
+            <!-- <img src="/images/boost-image-icon.svg" alt="Boost your professional image" class="benefit-icon"> -->
             <h3>Boost Your Image</h3>
             <p>Stand out on LinkedIn and other professional platforms with stunning AI-enhanced portraits. Our AI
                 ensures you always look your best, helping you make a strong first impression in the digital world.</p>
         </div>
         <div class="benefit">
-            <img src="/images/cutting-edge-icon.svg" alt="Stay ahead with cutting-edge technology" class="benefit-icon">
+            <!-- <img src="/images/cutting-edge-icon.svg" alt="Stay ahead with cutting-edge technology" class="benefit-icon"> -->
             <h3>Stay Ahead</h3>
             <p>Leverage the latest advancements in AI portrait technology to keep your profile fresh and impactful. Our
                 continuous AI model updates ensure you're always using the most advanced image generation technology
                 available.</p>
         </div>
         <div class="benefit">
-            <img src="/images/seamless-sharing-icon.svg" alt="Seamless sharing" class="benefit-icon">
+            <!-- <img src="/images/seamless-sharing-icon.svg" alt="Seamless sharing" class="benefit-icon"> -->
             <h3>Seamless Sharing</h3>
             <p>Enjoy AI-optimized sharing across all major platforms, ensuring your image looks great everywhere. Our
                 intelligent cropping and formatting ensure your headshot is perfectly optimized for each social media
@@ -828,14 +833,16 @@ footer {
 
 <div id="fullscreenOverlay" class="fullscreen-overlay">
     <button class="close-button" aria-label="Close fullscreen image">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+            stroke-linejoin="round">
             <line x1="18" y1="6" x2="6" y2="18"></line>
             <line x1="6" y1="6" x2="18" y2="18"></line>
         </svg>
     </button>
     <div class="fullscreen-content">
         <button id="prevButton" class="nav-button">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round">
                 <polyline points="15 18 9 12 15 6"></polyline>
             </svg>
         </button>
@@ -843,7 +850,8 @@ footer {
             <img id="fullscreenImage" src="" alt="Fullscreen image">
         </div>
         <button id="nextButton" class="nav-button">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round">
                 <polyline points="9 18 15 12 9 6"></polyline>
             </svg>
         </button>
@@ -930,233 +938,252 @@ footer {
 
 </script>
 <script>
-document.addEventListener('DOMContentLoaded', function () {
-    const gallery = document.getElementById('imageGallery');
-    const fullscreenOverlay = document.getElementById('fullscreenOverlay');
-    const fullscreenImage = document.getElementById('fullscreenImage');
-    const closeButton = document.querySelector('.close-button');
-    const prevButton = document.getElementById('prevButton');
-    const nextButton = document.getElementById('nextButton');
-    const imageCounter = document.querySelector('.image-counter');
-    const imageCount = 66;
-    let currentImageIndex = 0;
-    let loadedImages = [];
-    let startX = 0;
-    let currentX = 0;
-    let isZoomed = false;
-    let zoomLevel = 1;
+    document.addEventListener('DOMContentLoaded', function () {
+        const gallery = document.getElementById('imageGallery');
+        const fullscreenOverlay = document.getElementById('fullscreenOverlay');
+        const fullscreenImage = document.getElementById('fullscreenImage');
+        const closeButton = document.querySelector('.close-button');
+        const prevButton = document.getElementById('prevButton');
+        const nextButton = document.getElementById('nextButton');
+        const imageCounter = document.querySelector('.image-counter');
+        const imageCount = 66;
+        let currentImageIndex = 0;
+        let isZoomed = false;
+        let zoomLevel = 1;
 
-    function loadImages() {
-        for (let i = 1; i <= imageCount; i++) {
-            const img = new Image();
-            img.src = `./images/demoPhotos/AIFacePro${i}.png`;
-            img.onload = () => {
-                loadedImages.push(i);
-                addImageToGallery(i);
+        function loadImages() {
+            const options = {
+                rootMargin: '0px 0px 200px 0px',
+                threshold: 0.1
             };
-            img.onerror = () => {
-                console.log(`Image ${i} failed to load`);
-            };
+
+            const observer = new IntersectionObserver(onIntersection, options);
+
+            for (let i = 1; i <= imageCount; i++) {
+                const container = document.createElement('div');
+                container.className = 'gallery-image-container';
+
+                const img = document.createElement('img');
+                img.dataset.src = `./images/demoPhotos/AIFacePro${i}.png`;
+                img.alt = `AIFacePro App`; // Set alt text for SEO
+                img.className = 'gallery-image';
+                img.dataset.index = i - 1;
+
+                container.appendChild(img);
+                container.addEventListener('click', function () {
+                    openFullscreen(img.dataset.index);
+                });
+
+                gallery.appendChild(container);
+                observer.observe(container);
+            }
         }
-    }
 
-    function addImageToGallery(index) {
-        const container = document.createElement('div');
-        container.className = 'gallery-image-container';
 
-        const img = document.createElement('img');
-        img.src = `./images/demoPhotos/AIFacePro${index}.png`;
-        img.alt = `AIFacePro Demo Image ${index}`;
-        img.className = 'gallery-image loaded';
-        img.dataset.index = loadedImages.indexOf(index);
+        function onIntersection(entries, observer) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const img = entry.target.querySelector('img');
+                    img.src = img.dataset.src;
+                    img.addEventListener('load', () => {
+                        img.classList.add('loaded');
+                        entry.target.classList.add('in-view');
+                    });
+                    img.addEventListener('error', () => {
+                        entry.target.style.display = 'none';
+                    });
+                    observer.unobserve(entry.target);
+                }
+            });
+        }
 
-        container.appendChild(img);
-        container.addEventListener('click', function () {
-            openFullscreen(img.dataset.index);
+        function openFullscreen(index) {
+            currentImageIndex = parseInt(index);
+            updateFullscreenImage();
+            fullscreenOverlay.style.display = 'flex';
+            document.body.style.overflow = 'hidden';
+            updateNavigationButtons();
+            updateImageCounter();
+        }
+
+        function closeFullscreen() {
+            fullscreenOverlay.style.display = 'none';
+            document.body.style.overflow = '';
+            resetZoom();
+        }
+
+        function showNextImage() {
+            if (currentImageIndex < imageCount - 1) {
+                currentImageIndex++;
+                updateFullscreenImage();
+            }
+        }
+
+        function showPrevImage() {
+            if (currentImageIndex > 0) {
+                currentImageIndex--;
+                updateFullscreenImage();
+            }
+        }
+
+        function updateFullscreenImage() {
+            const newImage = new Image();
+            newImage.src = `./images/demoPhotos/AIFacePro${currentImageIndex + 1}.png`;
+            newImage.onload = () => {
+                fullscreenImage.src = newImage.src;
+                fullscreenImage.classList.add('loaded');
+                resetZoom();
+            };
+            newImage.onerror = () => {
+                showNextImage();
+            };
+            updateNavigationButtons();
+            updateImageCounter();
+        }
+
+        // Intersection observer for feature animations
+        const featureObserver = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('in-view');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('.feature, .benefit, .device-list li').forEach(element => {
+            featureObserver.observe(element);
         });
 
-        gallery.appendChild(container);
-    }
 
-    function openFullscreen(index) {
-    currentImageIndex = parseInt(index);
-    updateFullscreenImage();
-    fullscreenOverlay.style.display = 'flex';
-    document.body.style.overflow = 'hidden';
-    updateNavigationButtons();
-    updateImageCounter();
-}
 
-function closeFullscreen() {
-    fullscreenOverlay.style.display = 'none';
-    document.body.style.overflow = '';
-    resetZoom();
-}
-
-    function showNextImage() {
-        if (currentImageIndex < loadedImages.length - 1) {
-            currentImageIndex++;
-            updateFullscreenImage(true);
+        function updateNavigationButtons() {
+            prevButton.disabled = currentImageIndex === 0;
+            nextButton.disabled = currentImageIndex === imageCount - 1;
         }
-    }
 
-    function showPrevImage() {
-        if (currentImageIndex > 0) {
-            currentImageIndex--;
-            updateFullscreenImage(false);
+        function updateImageCounter() {
+            imageCounter.textContent = `${currentImageIndex + 1} of ${imageCount}`;
         }
-    }
 
-    function updateFullscreenImage(isNext = true) {
-    const imageIndex = loadedImages[currentImageIndex];
-    const newImage = new Image();
-    newImage.src = `./images/demoPhotos/AIFacePro${imageIndex}.png`;
-    newImage.onload = () => {
-        fullscreenImage.style.opacity = '0';
-        setTimeout(() => {
-            fullscreenImage.src = newImage.src;
-            fullscreenImage.style.opacity = '1';
-            resetZoom();
-        }, 300);
-    };
-    updateNavigationButtons();
-    updateImageCounter();
-}
-
-    function updateNavigationButtons() {
-        prevButton.disabled = currentImageIndex === 0;
-        nextButton.disabled = currentImageIndex === loadedImages.length - 1;
-        prevButton.style.opacity = currentImageIndex === 0 ? '0.3' : '0.7';
-        nextButton.style.opacity = currentImageIndex === loadedImages.length - 1 ? '0.3' : '0.7';
-    }
-
-    function updateImageCounter() {
-        imageCounter.textContent = `${currentImageIndex + 1} of ${loadedImages.length}`;
-    }
-
-    function resetZoom() {
-        isZoomed = false;
-        zoomLevel = 1;
-        fullscreenImage.style.transform = 'scale(1)';
-        fullscreenOverlay.classList.remove('zoomed');
-    }
-
-    function toggleZoom(event) {
-    const image = document.getElementById('fullscreenImage');
-    isZoomed = !isZoomed;
-    
-    if (isZoomed) {
-        const rect = image.getBoundingClientRect();
-        const x = (event.clientX - rect.left) / rect.width;
-        const y = (event.clientY - rect.top) / rect.height;
-        
-        image.style.transformOrigin = `${x * 100}% ${y * 100}%`;
-        image.style.transform = 'scale(2.5)';
-        image.classList.add('zoomed');
-    } else {
-        image.style.transform = 'scale(1)';
-        image.classList.remove('zoomed');
-    }
-}
-    function handleZoomPan(event) {
-        if (isZoomed) {
-            const rect = fullscreenImage.getBoundingClientRect();
-            const x = (event.clientX - rect.left) / rect.width;
-            const y = (event.clientY - rect.top) / rect.height;
-            fullscreenImage.style.transformOrigin = `${x * 100}% ${y * 100}%`;
+        function resetZoom() {
+            isZoomed = false;
+            zoomLevel = 1;
+            fullscreenImage.style.transform = 'scale(1)';
+            fullscreenOverlay.classList.remove('zoomed');
         }
-    }
 
-    loadImages();
-    closeButton.addEventListener('click', closeFullscreen);
-    prevButton.addEventListener('click', showPrevImage);
-    nextButton.addEventListener('click', showNextImage);
-    fullscreenImage.addEventListener('click', toggleZoom);
-    fullscreenOverlay.addEventListener('mousemove', handleZoomPan);
-    fullscreenOverlay.addEventListener('click', function(event) {
-        if (event.target === fullscreenOverlay) {
-            closeFullscreen();
+        function toggleZoom(event) {
+            const image = fullscreenImage;
+            isZoomed = !isZoomed;
+
+            if (isZoomed) {
+                const rect = image.getBoundingClientRect();
+                const x = (event.clientX - rect.left) / rect.width;
+                const y = (event.clientY - rect.top) / rect.height;
+
+                image.style.transformOrigin = `${x * 100}% ${y * 100}%`;
+                image.style.transform = 'scale(2.5)';
+                fullscreenOverlay.classList.add('zoomed');
+            } else {
+                resetZoom();
+            }
         }
-    });
-    
 
-    // Swipe and drag functionality
-    fullscreenImage.addEventListener('mousedown', startDrag);
-    fullscreenImage.addEventListener('touchstart', startDrag, { passive: false });
-// Prevent closing when clicking on the image itself
-fullscreenImage.addEventListener('click', (e) => {
-    e.stopPropagation();
-});
+        function handleZoomPan(event) {
+            if (isZoomed) {
+                const rect = fullscreenImage.getBoundingClientRect();
+                const x = (event.clientX - rect.left) / rect.width;
+                const y = (event.clientY - rect.top) / rect.height;
+                fullscreenImage.style.transformOrigin = `${x * 100}% ${y * 100}%`;
+            }
+        }
 
-    function startDrag(e) {
-        e.preventDefault();
-        startX = e.type === 'mousedown' ? e.clientX : e.touches[0].clientX;
-        currentX = 0;
-        fullscreenImage.style.transition = 'none';
-        document.addEventListener('mousemove', drag);
-        document.addEventListener('touchmove', drag, { passive: false });
-        document.addEventListener('mouseup', endDrag);
-        document.addEventListener('touchend', endDrag);
-    }
+        loadImages();
+        closeButton.addEventListener('click', closeFullscreen);
+        prevButton.addEventListener('click', showPrevImage);
+        nextButton.addEventListener('click', showNextImage);
+        fullscreenImage.addEventListener('click', toggleZoom);
+        fullscreenOverlay.addEventListener('mousemove', handleZoomPan);
+        fullscreenOverlay.addEventListener('click', function (event) {
+            if (event.target === fullscreenOverlay) {
+                closeFullscreen();
+            }
+        });
 
-    function drag(e) {
-        e.preventDefault();
-        const x = e.type === 'mousemove' ? e.clientX : e.touches[0].clientX;
-        currentX = x - startX;
-        fullscreenImage.style.transform = `translateX(${currentX}px)`;
-    }
+        // Swipe and drag functionality
+        let startX = 0;
+        let currentX = 0;
 
-    function endDrag() {
-        fullscreenImage.style.transition = 'transform 0.3s ease';
-        if (Math.abs(currentX) > 100) {
-            if (currentX > 0 && currentImageIndex > 0) {
-                showPrevImage();
-            } else if (currentX < 0 && currentImageIndex < loadedImages.length - 1) {
-                showNextImage();
+        fullscreenImage.addEventListener('mousedown', startDrag);
+        fullscreenImage.addEventListener('touchstart', startDrag, { passive: false });
+
+        function startDrag(e) {
+            e.preventDefault();
+            startX = e.type === 'mousedown' ? e.clientX : e.touches[0].clientX;
+            currentX = 0;
+            fullscreenImage.style.transition = 'none';
+            document.addEventListener('mousemove', drag);
+            document.addEventListener('touchmove', drag, { passive: false });
+            document.addEventListener('mouseup', endDrag);
+            document.addEventListener('touchend', endDrag);
+        }
+
+        function drag(e) {
+            e.preventDefault();
+            const x = e.type === 'mousemove' ? e.clientX : e.touches[0].clientX;
+            currentX = x - startX;
+            fullscreenImage.style.transform = `translateX(${currentX}px)`;
+        }
+
+        function endDrag() {
+            fullscreenImage.style.transition = 'transform 0.3s ease';
+            if (Math.abs(currentX) > 100) {
+                if (currentX > 0 && currentImageIndex > 0) {
+                    showPrevImage();
+                } else if (currentX < 0 && currentImageIndex < imageCount - 1) {
+                    showNextImage();
+                } else {
+                    fullscreenImage.style.transform = 'translateX(0)';
+                }
             } else {
                 fullscreenImage.style.transform = 'translateX(0)';
             }
-        } else {
-            fullscreenImage.style.transform = 'translateX(0)';
+            document.removeEventListener('mousemove', drag);
+            document.removeEventListener('touchmove', drag);
+            document.removeEventListener('mouseup', endDrag);
+            document.removeEventListener('touchend', endDrag);
         }
-        document.removeEventListener('mousemove', drag);
-        document.removeEventListener('touchmove', drag);
-        document.removeEventListener('mouseup', endDrag);
-        document.removeEventListener('touchend', endDrag);
-    }
 
-    // Keyboard navigation
-    document.addEventListener('keydown', (e) => {
-    if (fullscreenOverlay.classList.contains('active')) {
-        if (e.key === 'ArrowRight') showNextImage();
-        else if (e.key === 'ArrowLeft') showPrevImage();
-        else if (e.key === 'Escape') closeFullscreen();
-    }
-    if (e.key === 'Escape' && fullscreenOverlay.style.display === 'flex') {
-        closeFullscreen();
-    }
-});
+        // Keyboard navigation
+        document.addEventListener('keydown', (e) => {
+            if (fullscreenOverlay.style.display === 'flex') {
+                if (e.key === 'ArrowRight') showNextImage();
+                else if (e.key === 'ArrowLeft') showPrevImage();
+                else if (e.key === 'Escape') closeFullscreen();
+            }
+        });
 
-    // Touch events for mobile
-    let touchStartX = 0;
-    let touchEndX = 0;
+        // Touch events for mobile
+        let touchStartX = 0;
+        let touchEndX = 0;
 
-    fullscreenOverlay.addEventListener('touchstart', (e) => {
-        touchStartX = e.changedTouches[0].screenX;
+        fullscreenOverlay.addEventListener('touchstart', (e) => {
+            touchStartX = e.changedTouches[0].screenX;
+        });
+
+        fullscreenOverlay.addEventListener('touchend', (e) => {
+            touchEndX = e.changedTouches[0].screenX;
+            handleSwipe();
+        });
+
+        function handleSwipe() {
+            if (touchEndX < touchStartX) showNextImage();
+            if (touchEndX > touchStartX) showPrevImage();
+        }
     });
-
-    fullscreenOverlay.addEventListener('touchend', (e) => {
-        touchEndX = e.changedTouches[0].screenX;
-        handleSwipe();
-    });
-
-    function handleSwipe() {
-        if (touchEndX < touchStartX) showNextImage();
-        if (touchEndX > touchStartX) showPrevImage();
-    }
-});
-
 </script>
+
 
             </div>
         </section>
@@ -1230,16 +1257,18 @@ fullscreenImage.addEventListener('click', (e) => {
 
         // Fade in elements on scroll
         function fadeInOnScroll() {
-            var elements = document.querySelectorAll('.fade-in');
-            elements.forEach(element => {
-                var elementTop = element.getBoundingClientRect().top;
-                var elementBottom = element.getBoundingClientRect().bottom;
-                var isVisible = (elementTop >= 0) && (elementBottom <= window.innerHeight);
-                if (isVisible) {
-                    element.classList.add('is-visible');
-                }
-            });
+    var elements = document.querySelectorAll('.fade-in');
+    elements.forEach(element => {
+        var elementTop = element.getBoundingClientRect().top;
+        var elementBottom = element.getBoundingClientRect().bottom;
+        var windowHeight = window.innerHeight;
+        var threshold = 100; // Adjust this value to control when the effect triggers
+        var isVisible = (elementTop <= windowHeight - threshold) && (elementBottom >= threshold);
+        if (isVisible) {
+            element.classList.add('is-visible');
         }
+    });
+}
         window.addEventListener('scroll', fadeInOnScroll);
         window.addEventListener('load', fadeInOnScroll);
 

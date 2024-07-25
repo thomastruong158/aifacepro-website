@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AIFacePro - Revolutionary AI-Powered Professional Headshots | Transform Your Image Across Apple Devices</title>
+    <meta name="description" content="Experience the future of professional imagery with AIFacePro. Our cutting-edge AI technology transforms ordinary selfies into stunning, studio-quality headshots on iPhone, iPad, Mac, and Vision Pro. Perfect for enhancing your LinkedIn profile, digital resume, and professional online presence across all your Apple devices.">
+    <link rel="canonical" href="https://www.aifacepro.com/">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="AIFacePro - Transform Your Image with AI-Powered Headshots on Apple Devices">
+    <meta property="og:description" content="Elevate your professional image with AIFacePro's revolutionary AI technology. Create stunning headshots from selfies, customize your look, and stand out on LinkedIn and beyond. Now available on iPhone, iPad, Mac, and Vision Pro.">
+    <meta property="og:image" content="https://www.aifacepro.com/og-image.jpg">
+    <meta property="og:url" content="https://www.aifacepro.com">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <meta name="apple-itunes-app" content="app-id=6499257360">
+    <style>
+        :root {
+            --primary-color: #0071e3;
+            --text-color: #1d1d1f;
+            --secondary-text-color: #86868b;
+            --background-color: #ffffff;
+            --secondary-background-color: #f5f5f7;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+            color: var(--text-color);
+            line-height: 1.47059;
+            letter-spacing: -0.022em;
+            background-color: var(--background-color);
+            -webkit-font-smoothing: antialiased;
+        }
+        .container {
+            max-width: 980px;
+            margin: 0 auto;
+            padding: 0 22px;
+        }
+        header {
+            background-color: rgba(255,255,255,0.8);
+            backdrop-filter: saturate(180%) blur(20px);
+            position: sticky;
+            top: 0;
+            z-index: 9999;
+            transition: background-color 0.3s ease;
+        }
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 44px;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+        }
+        nav ul li {
+            margin-left: 30px;
+        }
+        nav ul li a {
+            color: var(--text-color);
+            text-decoration: none;
+            font-size: 14px;
+            opacity: 0.8;
+            transition: opacity 0.3s;
+        }
+        nav ul li a:hover {
+            opacity: 1;
+        }
+        h1, h2, h3 {
+            font-weight: 600;
+        }
+        .hero {
+            background-color: var(--secondary-background-color);
+            padding: 130px 0 65px;
+            text-align: center;
+        }
+        .hero h1 {
+            font-size: 56px;
+            line-height: 1.07143;
+            letter-spacing: -0.005em;
+            margin-bottom: 6px;
+        }
+        .hero p {
+            font-size: 28px;
+            line-height: 1.10722;
+            letter-spacing: .004em;
+            color: var(--secondary-text-color);
+        }
+        .content {
+            padding: 100px 0;
+        }
+        .feature {
+            margin-bottom: 100px;
+            text-align: center;
+        }
+        .feature h2 {
+            font-size: 40px;
+            line-height: 1.1;
+            letter-spacing: 0em;
+            margin-bottom: 20px;
+        }
+        .feature p {
+            font-size: 21px;
+            line-height: 1.381;
+            letter-spacing: .011em;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .cta {
+            background-color: var(--secondary-background-color);
+            padding: 100px 0;
+            text-align: center;
+        }
+        .button {
+            display: inline-block;
+            background-color: var(--primary-color);
+            color: var(--background-color);
+            padding: 12px 24px;
+            text-decoration: none;
+            border-radius: 980px;
+            font-size: 17px;
+            line-height: 1.17648;
+            letter-spacing: -0.022em;
+            min-width: 28px;
+            transition: all 0.3s;
+        }
+        .button:hover {
+            background-color: #0077ed;
+        }
+        footer {
+            background-color: #f5f5f7;
+            padding: 40px 0;
+            font-size: 12px;
+            line-height: 1.33337;
+            color: var(--secondary-text-color);
+        }
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+        .footer-links a {
+            margin: 0 10px;
+            color: var(--secondary-text-color);
+            text-decoration: none;
+        }
+        .footer-links a:hover {
+            text-decoration: underline;
+        }
+        .social-links {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+        .social-links a {
+            margin: 0 10px;
+        }
+        .social-links img {
+            width: 24px;
+            height: 24px;
+        }
+        .app-store-badge {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+        .video-demo {
+            text-align: center;
+            margin: 80px 0;
+            padding: 40px;
+            background-color: var(--secondary-background-color);
+            border-radius: 20px;
+        }
+        .video-demo h2 {
+            font-size: 40px;
+            margin-bottom: 30px;
+        }
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 aspect ratio */
+            height: 0;
+            overflow: hidden;
+            max-width: 100%;
+        }
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border-radius: 10px;
+        }
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+        .fade-in.is-visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --text-color: #f5f5f7;
+                --secondary-text-color: #a1a1a6;
+                --background-color: #000000;
+                --secondary-background-color: #1d1d1f;
+            }
+            header {
+                background-color: rgba(29,29,31,0.8);
+            }
+        }
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 40px;
+            }
+            .hero p {
+                font-size: 21px;
+            }
+            .feature h2 {
+                font-size: 32px;
+            }
+            .feature p {
+                font-size: 17px;
+            }
+        }
+    </style>
+    
+<style>
+    .feature-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 40px;
+        margin-bottom: 60px;
+    }
+    .feature {
+        background-color: var(--secondary-background-color);
+        border-radius: 18px;
+        padding: 30px;
+        text-align: left;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .feature:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    }
+    .feature-icon {
+        width: 60px;
+        height: 60px;
+        margin-bottom: 20px;
+    }
+    .feature h2 {
+        font-size: 24px;
+        margin-bottom: 15px;
+    }
+    .feature p {
+        font-size: 16px;
+        line-height: 1.5;
+        color: var(--secondary-text-color);
+    }
+    .learn-more {
+        display: inline-block;
+        margin-top: 15px;
+        color: var(--primary-color);
+        text-decoration: none;
+        font-weight: 600;
+    }
+    .learn-more .arrow {
+        transition: transform 0.3s ease;
+    }
+    .learn-more:hover .arrow {
+        transform: translateX(5px);
+    }
+    .wide {
+        grid-column: 1 / -1;
+    }
+    .benefits-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 30px;
+        margin-top: 30px;
+    }
+    .benefit {
+        text-align: center;
+    }
+    .benefit-icon {
+        width: 50px;
+        height: 50px;
+        margin-bottom: 15px;
+    }
+    .benefit h3 {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+    .compatibility {
+        background-color: var(--secondary-background-color);
+        border-radius: 18px;
+        padding: 40px;
+        text-align: center;
+        margin-top: 60px;
+    }
+    .device-list {
+        display: flex;
+        justify-content: center;
+        list-style: none;
+        padding: 0;
+        margin: 30px 0;
+    }
+    .device-list li {
+        margin: 0 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        transition: transform 0.3s ease;
+    }
+    .device-list li:hover {
+        transform: scale(1.1);
+    }
+    .device-icon {
+        width: 60px;
+        height: 60px;
+        margin-bottom: 10px;
+    }
+    
+    .cta-section {
+        text-align: center;
+        margin-top: 80px;
+    }
+    .cta-button {
+        display: inline-block;
+        background-color: var(--primary-color);
+        color: white;
+        padding: 15px 30px;
+        border-radius: 30px;
+        text-decoration: none;
+        font-weight: 600;
+        font-size: 18px;
+        margin-top: 20px;
+        transition: background-color 0.3s ease;
+    }
+    .cta-button:hover {
+        background-color: #005cbf;
+    }
+    @media (max-width: 768px) {
+        .feature-grid {
+            grid-template-columns: 1fr;
+        }
+        .benefits-grid {
+            grid-template-columns: 1fr 1fr;
+        }
+        .device-list {
+            flex-wrap: wrap;
+        }
+        .device-list li {
+            margin: 10px 20px;
+        }
+    }
+
+    .photo-gallery {
+    padding: 80px 0;
+    background-color: var(--secondary-background-color);
+}
+
+.photo-gallery h2 {
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    justify-items: center;
+}
+
+.gallery-item {
+    width: 100%;
+    height: 0;
+    padding-bottom: 100%;
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+}
+
+.gallery-item img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+</style>
+
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">AIFacePro</div>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="privacy-policy.html">Privacy</a></li>
+                    <li><a href="terms-of-use.html">Terms</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h1>Transform Your Image with AI</h1>
+                <p>Studio-Quality Professional Headshots at Your Fingertips - On Every Apple Device</p>
+                <div class="app-store-badge">
+                    <a href="https://apps.apple.com/us/app/aifacepro-ai-headshot-for-pro/id6499257360?itsct=apps_box_badge&amp;itscg=30200" style="display: inline-block; overflow: hidden; border-radius: 13px; width: 250px; height: 83px;"><img src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?size=250x83&amp;releaseDate=1714262400" alt="Download on the App Store" style="border-radius: 13px; width: 250px; height: 83px;"></a>
+                </div>
+            </div>
+        </section>
+
+
+
+        <section class="content">
+            <div class="container">
+                
+<div class="feature-grid">
+    <div class="feature fade-in">
+        <img src="/images/ai-perfection-icon.svg" alt="AI-Powered Perfection" class="feature-icon">
+        <h2>AI-Powered Perfection</h2>
+        <p>Experience the magic of our state-of-the-art AI as it transforms ordinary selfies into stunning, studio-quality headshots. Unveil your best professional self with ultra-realistic, AI-perfected smiles that capture your unique essence. Our advanced neural networks analyze facial features, lighting, and composition to create headshots that rival professional photography.</p>
+    </div>
+
+    <div class="feature fade-in">
+        <img src="/images/custom-prompt-icon.svg" alt="AI Custom Prompt Feature" class="feature-icon">
+        <h2>NEW: AI Custom Prompt Feature</h2>
+        <p>Take control of your image with our groundbreaking AI Custom Prompt Feature. Specify your desired context, activity, background, and location for truly personalized AI-generated headshots. Whether you need a corporate office backdrop or a creative outdoor setting, our AI can make it happen. The only limit is your imagination.</p>
+        <a href="#" class="learn-more">Learn how to create custom prompts <span class="arrow">→</span></a>
+    </div>
+
+    <div class="feature fade-in">
+        <img src="/images/fast-processing-icon.svg" alt="Lightning-Fast AI Processing" class="feature-icon">
+        <h2>Lightning-Fast AI Processing</h2>
+        <p>Time is of the essence. That's why we've harnessed the power of cloud GPU acceleration to deliver your professional AI-generated headshots at unprecedented speeds. Our distributed computing network processes your images using the latest NVIDIA GPUs, ensuring most orders are completed within 12 hours. You'll always be ready for your next opportunity, no matter which Apple device you're using.</p>
+    </div>
+</div>
+
+<div class="feature wide fade-in">
+    <h2>Why Choose AIFacePro?</h2>
+    <div class="benefits-grid">
+        <div class="benefit">
+            <img src="/images/time-money-icon.svg" alt="Save time and money" class="benefit-icon">
+            <h3>Save Time and Money</h3>
+            <p>Skip expensive photo shoots. Generate professional headshots instantly with our AI technology, right from your iPhone, iPad, Mac, or Vision Pro. No need for costly equipment or studio rentals.</p>
+        </div>
+        <div class="benefit">
+            <img src="/images/boost-image-icon.svg" alt="Boost your professional image" class="benefit-icon">
+            <h3>Boost Your Image</h3>
+            <p>Stand out on LinkedIn and other professional platforms with stunning AI-enhanced portraits. Our AI ensures you always look your best, helping you make a strong first impression in the digital world.</p>
+        </div>
+        <div class="benefit">
+            <img src="/images/cutting-edge-icon.svg" alt="Stay ahead with cutting-edge technology" class="benefit-icon">
+            <h3>Stay Ahead</h3>
+            <p>Leverage the latest advancements in AI portrait technology to keep your profile fresh and impactful. Our continuous AI model updates ensure you're always using the most advanced image generation technology available.</p>
+        </div>
+        <div class="benefit">
+            <img src="/images/seamless-sharing-icon.svg" alt="Seamless sharing" class="benefit-icon">
+            <h3>Seamless Sharing</h3>
+            <p>Enjoy AI-optimized sharing across all major platforms, ensuring your image looks great everywhere. Our intelligent cropping and formatting ensure your headshot is perfectly optimized for each social media platform and professional network.</p>
+        </div>
+    </div>
+</div>
+
+<div class="feature compatibility fade-in">
+    <h2>Seamless Apple Ecosystem Integration</h2>
+    <p>AIFacePro is meticulously designed to work flawlessly across your entire Apple ecosystem:</p>
+    <ul class="device-list">
+        <li><img src="/images/iphone-icon.svg" alt="iPhone" class="device-icon"> iPhone</li>
+        <li><img src="/images/ipad-icon.svg" alt="iPad" class="device-icon"> iPad</li>
+        <li><img src="/images/mac-icon.svg" alt="Mac" class="device-icon"> Mac</li>
+        <li><img src="/images/vision-pro-icon.svg" alt="Vision Pro" class="device-icon"> Vision Pro</li>
+    </ul>
+    <p>Available on iOS 15.0 or later, macOS Monterey or later, and visionOS. Transform your professional image seamlessly across all your Apple devices in 175 countries and regions worldwide. With iCloud integration, your AI-generated headshots are always at your fingertips, no matter which device you're using.</p>
+</div>
+
+<div class="cta-section fade-in">
+    <h2>Ready to Transform Your Professional Image Across All Your Apple Devices?</h2>
+    <p>Join thousands of professionals who are already leveraging the power of AI to enhance their digital presence. Whether you're using an iPhone, iPad, Mac, or Vision Pro, AIFacePro is ready to elevate your professional image.</p>
+    <a href="https://apps.apple.com/us/app/aifacepro-ai-headshot-for-pro/id6499257360" class="cta-button">Download AIFacePro Now</a>
+</div>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "AIFacePro",
+  "applicationCategory": "PhotographyApplication",
+  "operatingSystem": ["iOS", "macOS", "visionOS"],
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.8",
+    "ratingCount": "1000"
+  },
+  "description": "AIFacePro uses cutting-edge AI technology to transform selfies into professional studio-quality headshots on iPhone, iPad, Mac, and Vision Pro.",
+  "softwareVersion": "2.0",
+  "fileSize": "100MB",
+  "applicationSubCategory": "Professional Networking",
+  "datePublished": "2024-07-25",
+  "publisher": {
+    "@type": "Organization",
+    "name": "AIFacePro Inc.",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://www.aifacepro.com/logo.png"
+    }
+  },
+  "downloadUrl": "https://apps.apple.com/us/app/aifacepro-ai-headshot-for-pro/id6499257360",
+  "requirements": "Requires iOS 15.0 or later, macOS Monterey or later, or visionOS",
+  "screenshot": [
+    {
+      "@type": "ImageObject",
+      "url": "https://www.aifacepro.com/screenshots/iphone-screenshot1.jpg"
+    },
+    {
+      "@type": "ImageObject",
+      "url": "https://www.aifacepro.com/screenshots/ipad-screenshot1.jpg"
+    },
+    {
+      "@type": "ImageObject",
+      "url": "https://www.aifacepro.com/screenshots/mac-screenshot1.jpg"
+    },
+    {
+      "@type": "ImageObject",
+      "url": "https://www.aifacepro.com/screenshots/vision-pro-screenshot1.jpg"
+    }
+  ]
+}
+</script>
+<div class="photo-gallery fade-in">
+                    <div class="container">
+                        <h2>AI-Generated Headshot Examples</h2>
+                        <div class="gallery-grid" id="photoGallery">
+                            <!-- Photos will be dynamically inserted here -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        
+        <div class="video-demo fade-in">
+            <div class="container">
+                <h2>See AIFacePro in Action</h2>
+                <div class="video-container">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/5e05eVk6Mb0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+        
+        <section class="cta">
+            <div class="container">
+                <h2>Elevate Your Professional Image with AI</h2>
+                <p>Join thousands of professionals transforming their digital presence</p>
+                <a href="https://apps.apple.com/us/app/aifacepro-ai-headshot-for-pro/id6499257360" class="button">Download Now</a>
+            </div>
+        </section>
+        
+    </main>
+    <footer>
+        <div class="container">
+            <div class="social-links">
+                <a href="https://www.linkedin.com/company/103836321/" target="_blank" rel="noopener">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" alt="LinkedIn">
+                </a>
+                <a href="https://www.instagram.com/aifacepro/" target="_blank" rel="noopener">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram">
+                </a>
+                <a href="https://www.whatsapp.com/channel/0029Vaj7n432f3ECwO5Amt34" target="_blank" rel="noopener">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+                </a>
+                <a href="https://www.facebook.com/people/AIFacePro/61558747693103/" target="_blank" rel="noopener">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook">
+                </a>
+            </div>
+                        <div class="footer-links">
+                <a href="privacy-policy.html">Privacy Policy</a>
+                <a href="terms-of-use.html">Terms of Use</a>
+                <a href="contact.html">Contact Us</a>
+            </div>
+            <p>&copy; 2024 AIFacePro. All rights reserved.</p>
+            <p>70 Rue Albert, 75013 Paris | thomas.trg158@gmail.com | (+33) 6 79 67 47 14</p>
+            <p>AIFacePro is compatible with iPhone, iPad, Mac and Vision Pro.</p>
+            <p>Individual results may vary.</p>
+        </div>
+    </footer>
+    
+    <script>
+        // Sticky navigation
+        window.addEventListener('scroll', function() {
+            var header = document.querySelector('header');
+            header.classList.toggle('sticky', window.scrollY > 0);
+        });
+
+        // Smooth scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Fade in elements on scroll
+        function fadeInOnScroll() {
+            var elements = document.querySelectorAll('.fade-in');
+            elements.forEach(element => {
+                var elementTop = element.getBoundingClientRect().top;
+                var elementBottom = element.getBoundingClientRect().bottom;
+                var isVisible = (elementTop >= 0) && (elementBottom <= window.innerHeight);
+                if (isVisible) {
+                    element.classList.add('is-visible');
+                }
+            });
+        }
+        window.addEventListener('scroll', fadeInOnScroll);
+        window.addEventListener('load', fadeInOnScroll);
+
+        // Lazy load YouTube video
+        function loadYouTubeVideo() {
+            var videoFrame = document.querySelector('.video-container iframe');
+            videoFrame.src = videoFrame.dataset.src;
+        }
+        window.addEventListener('load', loadYouTubeVideo);
+
+        // Load and display demo photos
+// Load and display demo photos
+async function loadDemoPhotos() {
+    const gallery = document.getElementById('photoGallery');
+    const photoFolder = '/images/demoPhotos/';
+    
+    try {
+        // Fetch the list of files in the directory
+        const response = await fetch(photoFolder);
+        const html = await response.text();
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(html, 'text/html');
+        const links = doc.querySelectorAll('a');
+        
+        // Filter for image files
+        const imageExtensions = ['.png', '.jpg', '.jpeg', '.gif'];
+        const photos = Array.from(links)
+            .map(link => link.href)
+            .filter(href => imageExtensions.some(ext => href.toLowerCase().endsWith(ext)));
+
+        // Create and append image elements
+        photos.forEach(photo => {
+            const item = document.createElement('div');
+            item.className = 'gallery-item';
+            
+            const img = document.createElement('img');
+            img.src = photo;
+            img.alt = 'AI-generated headshot';
+            img.loading = 'lazy'; // Enable lazy loading for better performance
+            
+            item.appendChild(img);
+            gallery.appendChild(item);
+        });
+    } catch (error) {
+        console.error('Error loading photos:', error);
+        gallery.innerHTML = '<p>Error loading photos. Please try again later.</p>';
+    }
+}
+
+// Call the function to load photos
+window.addEventListener('load', loadDemoPhotos);
+
+    </script>
+</body>
+</html>
